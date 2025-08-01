@@ -10,8 +10,12 @@ int GCD(int a, int b){
 
 int main(){
     int a, b;
+    cout<<"enter two numbers: ";
     cin>>a>>b;
 
-    int g=GCD(a, b);
-    cout<<g<<endl;
+    int g1=GCD(a, b);
+    int g2=GCD(b, a);
+
+    cout<<"GCD of (a,b): "<<g1<<endl;
+    cout<<"GCD of (b,a): "<<g2<<endl;
 }
