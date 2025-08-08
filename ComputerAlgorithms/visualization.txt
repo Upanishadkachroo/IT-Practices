@@ -1,0 +1,11 @@
+hotspot
+Modern Qt-based GUI for perf.data files.
+
+Install:
+sudo apt install hotspot
+
+Usage:
+perf record ./your_program
+hotspot perf.data
+
+Provides interactive flame graphs & call trees.

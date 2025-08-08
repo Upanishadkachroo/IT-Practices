@@ -1,0 +1,20 @@
+uname -r //Check your kernel version
+
+sudo apt update
+sudo apt install linux-tools-common linux-tools-generic linux-tools-$(uname -r)
+//Install matching perf package
+
+g++ -O2 -g quicksort.cpp -o quicksort //Compile your program with debugging symbols
+
+perf record ./quicksort //Record performance data
+
+perf report
+
+
+
+flame graph
+git clone https://github.com/brendangregg/FlameGraph
+
+perf record -F 99 -g ./quicksort
+perf script | ./FlameGraph/stackcollapse-perf.pl | ./FlameGraph/flamegraph.pl > flame.svg
+
