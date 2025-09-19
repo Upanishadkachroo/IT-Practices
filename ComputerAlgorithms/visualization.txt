@@ -5,7 +5,6 @@ Install:
 sudo apt install hotspot
 
 Usage:
-perf record ./your_program
-hotspot perf.data
+perf record ./your_program hotspot perf.data
 
 Provides interactive flame graphs & call trees.
