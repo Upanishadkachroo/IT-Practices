@@ -1,0 +1,12 @@
+# install venv if missing
+sudo apt install python3-venv -y
+
+# create a virtual environment
+python3 -m venv venv
+
+# activate the virtual environment
+source venv/bin/activate
+
+pip install seaborn scikit-learn matplotlib numpy pandas
+
+deactivate

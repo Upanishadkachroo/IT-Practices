@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
     }
 
     // Scatter the data array to all processors
-    int localN = N / 4;  // Each processor gets a chunk of 250 elements
+    int localN = N / 8;  // Each processor gets a chunk of 250 elements
     int localData[localN];
 
     MPI_Scatter(data, localN, MPI_INT, localData, localN, MPI_INT, 0, MPI_COMM_WORLD);
