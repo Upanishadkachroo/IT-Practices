@@ -1,0 +1,21 @@
+main.cpp
+random_generator.cpp
+random_generator.h
+        │
+        ▼
+CMakeLists.txt
+        │
+        ▼
+cmake ..
+        │
+        ▼
+Generated Makefile
+        │
+        ▼
+make
+        │
+        ▼
+RandomProject executable
+        │
+        ▼
+./RandomProject
